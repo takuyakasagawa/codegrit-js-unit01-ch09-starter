@@ -10,14 +10,19 @@ const picArray = [
 {src: './images/pic_6.jpg', title: 'picture 6'}
 ];
 
+picArray[0];// 画像1の取り出し
+picArray[1];// 画像2の取り出し
+picArray[2];// 画像3の取り出し
+picArray[3];// 画像4の取り出し
+picArray[4];// 画像5の取り出し
+picArray[5];// 画像6の取り出し
 
 //スライドショーが再生中かどうかを記録しておくためのグローバル変数
-let playingID = 0;
-picArray[0].title
-document.getElementById('pics').src
-document.getElementById('pic-title').innerHTML
+document.getElementById('pic-title').innerHTML = picArray[0].title;
 //写真を切り替える関数
 //関数名「changePicture」
+let playingID = 0;
+playingID = setInterval(changePicture,2000);
 
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
