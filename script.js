@@ -35,18 +35,3 @@ function changePicture(){
 }
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
-
-function showScore(){
-    //スコア表示の処理をここに記述
-    const output = document.getElementById('score-message');
-    if (score === 3){
-        output.innerHTML = score + '点:素晴らしい！';
-    } else if (score === 2){
-        output.innerHTML = score + '点:おしい！';
-    } else if (score === 1){
-        output.innerHTML = score + '点:まぁまぁ';
-    } else {
-        output.innerHTML = score + '点:残念';
-    }
-    console.log(output);
-}
