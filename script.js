@@ -18,11 +18,35 @@ picArray[4];// 画像5の取り出し
 picArray[5];// 画像6の取り出し
 
 //スライドショーが再生中かどうかを記録しておくためのグローバル変数
-document.getElementById('pic-title').innerHTML = picArray[0].title;
 //写真を切り替える関数
 //関数名「changePicture」
-let playingID = 0;
-playingID = setInterval(changePicture,2000);
-
+function changePicture(){
+    let playingID = 0;
+    playingID = setInterval(changePicture,2000);
+    document.getElementById('pic-title').innerHTML = picArray[0].title;
+    document.getElementById('pics').src = picArray[0].src;
+    if (setInterval = 2000) {
+        playingID = 1;
+    } else if (条件式2) {
+        文;
+    } else {
+        文; // 全ての条件に当てはまらない場合に実行
+    }
+}
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
+
+function showScore(){
+    //スコア表示の処理をここに記述
+    const output = document.getElementById('score-message');
+    if (score === 3){
+        output.innerHTML = score + '点:素晴らしい！';
+    } else if (score === 2){
+        output.innerHTML = score + '点:おしい！';
+    } else if (score === 1){
+        output.innerHTML = score + '点:まぁまぁ';
+    } else {
+        output.innerHTML = score + '点:残念';
+    }
+    console.log(output);
+}
