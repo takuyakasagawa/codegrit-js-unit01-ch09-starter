@@ -26,7 +26,7 @@ function changePicture(){
     document.getElementById('pic-title').innerHTML = picArray[0].title;
     document.getElementById('pics').src = picArray[0].src;
     if (setInterval = 2000) {
-        playingID = 1;
+        picArray ++;
     } else if (条件式2) {
         文;
     } else {
