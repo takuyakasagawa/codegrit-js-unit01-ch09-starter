@@ -20,17 +20,17 @@ picArray[5];// 画像6の取り出し
 //スライドショーが再生中かどうかを記録しておくためのグローバル変数
 //写真を切り替える関数
 //関数名「changePicture」
+let counter = 0;
 function changePicture(){
     let playingID = 0;
     playingID = setInterval(changePicture,2000);
-    document.getElementById('pic-title').innerHTML = picArray[0].title;
-    document.getElementById('pics').src = picArray[0].src;
-    if (setInterval = 2000) {
-        picArray ++;
-    } else if (条件式2) {
-        文;
+    if (picArray.length > counter) {
+        counter++;
+        document.getElementById('pic-title').innerHTML = picArray[counter].title;
+        document.getElementById('pics').src = picArray[counter].src;
     } else {
-        文; // 全ての条件に当てはまらない場合に実行
+        document.getElementById('pic-title').innerHTML = picArray[0].title;
+        document.getElementById('pics').src = picArray[0].src;
     }
 }
 // ボタンを押してスライドショーを再生・停止する関数
