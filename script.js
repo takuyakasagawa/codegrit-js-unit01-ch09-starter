@@ -25,9 +25,9 @@ function changePicture(){
     let playingID = 0;
     playingID = setInterval(changePicture,2000);
     if (picArray.length > counter) {
-        counter++;
         document.getElementById('pic-title').innerHTML = picArray[counter].title;
         document.getElementById('pics').src = picArray[counter].src;
+        counter++;
     } else {
         document.getElementById('pic-title').innerHTML = picArray[0].title;
         document.getElementById('pics').src = picArray[0].src;
