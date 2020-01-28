@@ -35,3 +35,9 @@ function changePicture(){
 }
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
+function playSlidedeshow(){
+    const paragraphAction = document.getElementById('playButton');
+    for () {
+    }
+    window.addEventListener();
+}
