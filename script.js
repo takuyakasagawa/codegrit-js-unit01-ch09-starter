@@ -21,9 +21,8 @@ picArray[5];// 画像6の取り出し
 //写真を切り替える関数
 //関数名「changePicture」
 let counter = 0;
+let playingID = 0;
 function changePicture(){
-    let playingID = 0;
-    playingID = setInterval(changePicture,2000);
     if (picArray.length > counter) {
         document.getElementById('pic-title').innerHTML = picArray[counter].title;
         document.getElementById('pics').src = picArray[counter].src;
@@ -36,8 +35,11 @@ function changePicture(){
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
 function playSlidedeshow(){
-    const paragraphAction = document.getElementById('playButton');
-    for () {
+    if (playingID == 0) {
+        document.getElementById('playButton').innerHTML = 'PLAY';
+        playingID = setInterval(changePicture,2000);
+    } else {
+        clearInterval(playingID);
+        document.getElementById('playButton').innerHTML = 'STOP';
     }
-    window.addEventListener();
 }
