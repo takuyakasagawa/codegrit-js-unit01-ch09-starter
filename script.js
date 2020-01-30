@@ -30,16 +30,18 @@ function changePicture(){
     } else {
         document.getElementById('pic-title').innerHTML = picArray[0].title;
         document.getElementById('pics').src = picArray[0].src;
+        counter = 0;
     }
 }
 // ボタンを押してスライドショーを再生・停止する関数
 //関数名「playSlidedeshow」
 function playSlidedeshow(){
     if (playingID == 0) {
-        document.getElementById('playButton').innerHTML = 'PLAY';
+        document.getElementById('playButton').innerHTML = 'STOP';
         playingID = setInterval(changePicture,2000);
     } else {
         clearInterval(playingID);
-        document.getElementById('playButton').innerHTML = 'STOP';
+        document.getElementById('playButton').innerHTML = 'PLAY';
+        playingID = 0;
     }
 }
