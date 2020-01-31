@@ -30,7 +30,7 @@ function changePicture(){
     } else {
         document.getElementById('pic-title').innerHTML = picArray[0].title;
         document.getElementById('pics').src = picArray[0].src;
-        counter = 0;
+        counter = 1;
     }
 }
 // ボタンを押してスライドショーを再生・停止する関数
