@@ -10,13 +10,6 @@ const picArray = [
 {src: './images/pic_6.jpg', title: 'picture 6'}
 ];
 
-picArray[0];// 画像1の取り出し
-picArray[1];// 画像2の取り出し
-picArray[2];// 画像3の取り出し
-picArray[3];// 画像4の取り出し
-picArray[4];// 画像5の取り出し
-picArray[5];// 画像6の取り出し
-
 //スライドショーが再生中かどうかを記録しておくためのグローバル変数
 //写真を切り替える関数
 //関数名「changePicture」
